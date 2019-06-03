@@ -25,13 +25,10 @@ def selection_sort( arr ):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     sorted = False
-    print(arr)
     while not sorted:
         swaps = 0
-        print(sorted, swaps)
         for i in range(0, len(arr)-1):
             if arr[i] > arr[i+1]:
-                print(arr[i], arr[i+1], 'swapped')
                 swap(arr, i, i+1)
                 swaps += 1
         if(swaps == 0):
